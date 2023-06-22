@@ -1,0 +1,12 @@
+NAME: noname
+EVAL:
+  USE_UNLABELED: True
+  DP_ALGO: DropDTW
+  DROP_COST: logit
+  KEEP_PERCENTILE: 0.1
+  GAMMA: 1
+
+TRAIN:
+  OPTIMIZER: AdamW
+  LR_SCHEDULER: ReduceLROnPlateau
+  PATIENCE: 15
